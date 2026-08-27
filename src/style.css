@@ -278,3 +278,76 @@ footer {
   color: #555555;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+
+  .hero-text {
+    font-size: 17px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primary-button,
+  .secondary-button {
+    text-align: center;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: 38px;
+  }
+
+  .skill-example {
+    padding: 25px;
+  }
+
+  .skill-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta {
+    padding: 80px 20px;
+  }
+
+  .final-cta h2 {
+    font-size: 44px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-item {
+    padding: 5px;
+  }
+}
