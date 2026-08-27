@@ -278,76 +278,108 @@ footer {
   color: #555555;
   font-size: 14px;
 }
-@media (max-width: 768px) {
-  .hero {
-    min-height: auto;
-    padding: 80px 20px;
-  }
+.profile-hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+  max-width: 750px;
+  margin: 0 auto;
+}
 
-  .hero h1 {
-    font-size: 48px;
-    letter-spacing: -1px;
-  }
+.profile-hero h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
+}
 
-  .hero-text {
-    font-size: 17px;
-  }
+.profile-hero > p:not(.eyebrow) {
+  font-size: 18px;
+  color: #555555;
+}
+.profile-form-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px 100px;
+}
 
-  .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form-section {
+  padding: 35px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
 
-  .primary-button,
-  .secondary-button {
-    text-align: center;
-  }
+.form-section h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.form-group {
+  margin-bottom: 24px;
+}
 
-  .steps {
-    grid-template-columns: 1fr;
-  }
+.form-group:last-child {
+  margin-bottom: 0;
+}
 
-  .section-heading h2 {
-    font-size: 38px;
-  }
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  background-color: #ffffff;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--text-color);
+  box-shadow: 0 0 0 2px var(--brand-color);
+}
+.form-group small {
+  display: block;
+  margin-top: 8px;
+  color: #777777;
+  font-size: 13px;
+}
+.profile-form > .primary-button {
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 16px;
+  align-self: flex-start;
+}
+.profile-hero {
+  padding: 60px 20px 40px;
+}
 
-  .skill-example {
-    padding: 25px;
-  }
+.profile-hero h1 {
+  font-size: 42px;
+}
 
-  .skill-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
+.profile-form-section {
+  padding: 10px 20px 70px;
+}
 
-  .projects {
-    grid-template-columns: 1fr;
-  }
+.form-section {
+  padding: 25px;
+}
 
-  .final-cta {
-    padding: 80px 20px;
-  }
+.form-section h2 {
+  font-size: 26px;
+}
 
-  .final-cta h2 {
-    font-size: 44px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .footer-links {
-    justify-content: center;
-  }
-
-  .nav-links {
-    gap: 10px;
-  }
-
-  .nav-item {
-    padding: 5px;
-  }
+.profile-form > .primary-button {
+  width: 100%;
 }
